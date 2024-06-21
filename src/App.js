@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Button } from "antd";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className=" flex w-screen 
+			h-screen flex-col justify-center 
+			gap-1 items-center">
+
+			<h1 className="text-green-500 font-bold">
+				Ubora Fashion
+			</h1>
+
+			<Button className="bg-[#1677ff]"
+				type="primary">
+				Un bouton
+			</Button>
+		</div>
+	);
 }
 
 export default App;
